@@ -12,7 +12,10 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-part of quiver.core;
+/**
+ * Compute `hashCode` correctly for your objects.
+ */
+library quiver.hashcode;
 
 /**
  * Generates a hash code for multiple [objects].
