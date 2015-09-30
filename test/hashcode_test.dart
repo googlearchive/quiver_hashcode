@@ -12,23 +12,29 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-library quiver.iterables.cycle_test;
+library quiver.core.hash_test;
 
+import 'package:quiver_hashcode/hashcode.dart';
 import 'package:test/test.dart';
-import 'package:quiver/iterables.dart';
 
 main() {
-  group('cycle', () {
-    test("should create an empty iterable given an empty iterable", () {
-      expect(cycle([]), []);
-      expect(cycle([]).isEmpty, true);
-      expect(cycle([]).isNotEmpty, false);
-    });
+  test('hashObjects should return an int', () {
+    int h = hashObjects(['123', 456]);
+    expect(h, new isInstanceOf<int>());
+  });
 
-    test("should cycle its argument", () {
-      expect(cycle([1, 2, 3]).take(7), [1, 2, 3, 1, 2, 3, 1]);
-      expect(cycle([1, 2, 3]).isEmpty, false);
-      expect(cycle([1, 2, 3]).isNotEmpty, true);
-    });
+  test('hash2 should return an int', () {
+    int h = hash2('123', 456);
+    expect(h, new isInstanceOf<int>());
+  });
+
+  test('hash3 should return an int', () {
+    int h = hash3('123', 456, true);
+    expect(h, new isInstanceOf<int>());
+  });
+
+  test('hash4 should return an int', () {
+    int h = hash4('123', 456, true, []);
+    expect(h, new isInstanceOf<int>());
   });
 }
