@@ -1,6 +1,6 @@
-#### 1.0.1
+#### 2.0.0
 
-* Declare support for Dart 2
+* Declare support for Dart 2, drop support for Dart 1.
 
 #### 1.0.0-dev.1
 
