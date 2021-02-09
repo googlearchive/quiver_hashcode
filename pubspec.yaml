@@ -1,5 +1,5 @@
 name: quiver_hashcode
-version: 2.0.0
+version: 3.0.0-nullsafety.0
 authors:
 - Justin Fagnani <justinfagnani@google.com>
 - Yegor Jbanov <yjbanov@google.com>
@@ -15,7 +15,7 @@ description: Compute hashCode correctly for your objects
 homepage: https://github.com/QuiverDart/quiver_hashcode
 
 environment:
-  sdk: '>=2.0.0-dev.61 <3.0.0'
+  sdk: '>=2.12.0 <3.0.0'
 
 dev_dependencies:
   test: '^1.0.0'
